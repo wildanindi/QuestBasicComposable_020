@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Pertemuan3Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    TataletakColumn(
+                    TataletakColumnRow(
 
                         modifier = Modifier.padding(innerPadding)
                     )
