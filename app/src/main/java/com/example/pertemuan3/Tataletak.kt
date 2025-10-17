@@ -22,6 +22,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 
 @Composable
@@ -136,7 +137,12 @@ fun TataletakBoxColumnRow(modifier: Modifier){
                 .background(color = Color.Cyan),
             contentAlignment = Alignment.Center
         ){
-
+            Image(painter = gambar,
+                contentDescription = null,
+                contentScale = ContentScale.Fit)
+            Text(text = "My Musicc",
+                fontSize = 50.sp,
+                )
         }
     }
 }
