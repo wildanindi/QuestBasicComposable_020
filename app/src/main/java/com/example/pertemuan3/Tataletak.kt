@@ -105,28 +105,38 @@ fun TataletakBoxColumnRow(modifier: Modifier){
         Box(
             modifier = modifier
                 .fillMaxWidth()
-                .height(height = 110.dp)
+                .height( height = 110.dp)
                 .background(color = Color.Yellow),
             contentAlignment = Alignment.Center
-        ) {
-            Column() {
-                Row(
+        ){
+            Column (){
+                Row (
                     modifier = modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
-                ) {
+                ){
                     Text(text = "Col1_Row1_Komponen1")
                     Text(text = "Col1_Row1_Komponen2")
                     Text(text = "Col1_Row1_Komponen3")
                 }
-                Row(
+                Row (
                     modifier = modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
-                ) {
+                ){
                     Text(text = "Col1_Row2_Komponen1")
                     Text(text = "Col1_Row2_Komponen2")
                     Text(text = "Col1_Row2_Komponen3")
                 }
             }
         }
+        Spacer(modifier = Modifier.height( height = 10.dp))
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(height = 300.dp)
+                .background(color = Color.Cyan),
+            contentAlignment = Alignment.Center
+        ){
+
+        }
     }
-    }
+}
